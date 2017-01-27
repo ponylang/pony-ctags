@@ -1,0 +1,9 @@
+--langdef=pony
+--langmap=pony:.pony
+--regex-pony=/^fun[ \t]*([a-zA-Z0-9_]+)/\1/f,function/
+--regex-pony=/^be[ \t]*([a-zA-Z0-9_]+)/\1/b,behavior/
+--regex-pony=/^actor[ \t]*([a-zA-Z0-9_]+)/\1/a,actor/
+--regex-pony=/^class[ \t]*([a-zA-Z0-9_]+)/\1/c,class/
+--regex-pony=/^trait[ \t]*([a-zA-Z0-9_]+)/\1/t,trait/
+--regex-pony=/^interface[ \t]*([a-zA-Z0-9_]+)/\1/i,interface/
+--regex-pony=/^type[ \t]*([a-zA-Z0-9_]+)/\1/y,type/
