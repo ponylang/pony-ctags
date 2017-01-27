@@ -1,2 +1,3 @@
 # pony-ctags
-Exuberant Ctags support for the Pony programming language
+[Exuberant CTags](http://ctags.sourceforge.net/) support for the
+[Pony](http://pony-lang.org/) language.
