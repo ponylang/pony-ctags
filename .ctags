@@ -1,9 +1,9 @@
 --langdef=pony
 --langmap=pony:.pony
---regex-pony=/^fun[ \t]*([a-zA-Z0-9_]+)/\1/f,function/
---regex-pony=/^be[ \t]*([a-zA-Z0-9_]+)/\1/b,behavior/
---regex-pony=/^actor[ \t]*([a-zA-Z0-9_]+)/\1/a,actor/
---regex-pony=/^class[ \t]*([a-zA-Z0-9_]+)/\1/c,class/
---regex-pony=/^trait[ \t]*([a-zA-Z0-9_]+)/\1/t,trait/
---regex-pony=/^interface[ \t]*([a-zA-Z0-9_]+)/\1/i,interface/
---regex-pony=/^type[ \t]*([a-zA-Z0-9_]+)/\1/y,type/
+--regex-pony=/^[ \t]*actor[ \t]+([a-zA-Z0-9_]+)/\1/a,actor/
+--regex-pony=/^[ \t]*be[ \t]+([a-zA-Z0-9_]+)/\1/b,behavior/
+--regex-pony=/^[ \t]*class([ \t]+(iso|trn|ref|val|box|tag))?[ \t]+([a-zA-Z0-9_]+)/\3/c,class/
+--regex-pony=/^[ \t]*fun([ \t]+(iso|trn|ref|val|box|tag))?[ \t]+([a-zA-Z0-9_]+)/\3/f,function/
+--regex-pony=/^[ \t]*interface([ \t]+(iso|trn|ref|val|box|tag))?[ \t]+([a-zA-Z0-9_]+)/\3/i,interface/
+--regex-pony=/^[ \t]*trait([ \t]+(iso|trn|ref|val|box|tag))?[ \t]+([a-zA-Z0-9_]+)/\3/t,trait/
+--regex-pony=/^[ \t]*type[ \t]+([a-zA-Z0-9_]+)/\1/y,type/
